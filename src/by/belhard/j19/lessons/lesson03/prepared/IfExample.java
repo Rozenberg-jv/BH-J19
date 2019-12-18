@@ -11,6 +11,7 @@ public class IfExample {
 			System.out.println(a + " not equals " + b);
 
 
+
 	}
 
 }
