@@ -7,6 +7,14 @@ public class Person {
 	Country country;
 	Sex sex;
 
+	public Person(String name, int age, Sex sex, String title, int zipCode) {
+
+		this.name = name;
+		this.age = age;
+		this.country = new Country(title, zipCode);
+		this.sex = sex;
+	}
+
 	public Person(String name, int age, Country country, Sex sex) {
 
 		this.name = name;
