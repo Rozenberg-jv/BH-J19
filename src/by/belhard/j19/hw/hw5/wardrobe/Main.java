@@ -21,7 +21,7 @@ public class Main {
         wardrobe.lookIntoWardrobe();
         wardrobe.getFromShelf(5);
         Clothes get = wardrobe.getFromShelf(0);
-        System.out.println(get.getTitle());
+        System.out.println(get);
         wardrobe.lookIntoWardrobe();
     }
 }

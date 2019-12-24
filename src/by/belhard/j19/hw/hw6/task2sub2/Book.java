@@ -58,6 +58,7 @@ public class Book {
 		for (Author author : authors)
 			authorsList += author + "\n";
 
-		return String.format("Book: \"%s\", %d pages, format: %s. Authors list:\n%s", title, pageCount, format, authorsList);
+		return String.format("Book: \"%s\", %d pages, format: %s. Authors list:\n%s",
+				title, pageCount, format, authorsList);
 	}
 }

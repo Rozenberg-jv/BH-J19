@@ -22,7 +22,7 @@ public class Wardrobe {
 
         if (shelves[shelf] == null) {
             shelves[shelf] = clothes;
-            System.out.println(clothes.getTitle()
+            System.out.println(clothes
                     + " is thrown into " + shelf + " shelf");
         } else
             System.out.println("BUSY");
@@ -32,7 +32,7 @@ public class Wardrobe {
         for (int i = 0; i < shelves.length; i++) {
             if (shelves[i] == null) {
                 shelves[i] = clothes;
-                System.out.println(clothes.getTitle()
+                System.out.println(clothes
                         + " is thrown into " + i + " shelf");
                 return;
             }
@@ -51,7 +51,7 @@ public class Wardrobe {
             System.out.println("EMPTY SHELF");
         } else {
             result = shelves[shelf];
-            System.out.println("Get " + result.getTitle());
+            System.out.println("Get " + result);
             shelves[shelf] = null;
         }
 
@@ -63,7 +63,7 @@ public class Wardrobe {
         System.out.println("\n--- WARDROBE ---");
         for (int i = 0; i < shelves.length; i++) {
             System.out.printf("%d) %20s\n", i,
-                    shelves[i] == null ? "*nothing*" : shelves[i].getTitle());
+                    shelves[i] == null ? "*nothing*" : shelves[i]);
         }
         System.out.println("--- -------- ---\n");
     }
