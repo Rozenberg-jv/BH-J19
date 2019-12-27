@@ -16,6 +16,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+//		Pet pet = new Pet("random");
+
 		Pet aDog = new Dog("Rex");
 		Pet aCat = new Cat("Murka");
 		Pet aFish = new Fish("Toby");

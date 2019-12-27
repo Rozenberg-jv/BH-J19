@@ -20,6 +20,9 @@ public class Main {
 		personListHandler.addPerson(new Person("Ignat"));
 		personListHandler.addPerson(new Person("Marina"));
 
+		personListHandler.getListInfo();
+		System.out.println();
+
 		System.out.println(personListHandler.getPersonByName("Marina"));
 	}
 }

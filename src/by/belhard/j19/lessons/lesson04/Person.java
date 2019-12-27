@@ -1,5 +1,7 @@
 package by.belhard.j19.lessons.lesson04;
 
+import java.util.Objects;
+
 public class Person {
 
 	String name;
@@ -63,6 +65,22 @@ public class Person {
 	int growOld() {
 
 		return ++age;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Person person = (Person) o;
+		return age == person.age &&
+				Objects.equals(name, person.name) &&
+				Objects.equals(country, person.country) &&
+				sex == person.sex;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, age, country, sex);
 	}
 
 	@Override

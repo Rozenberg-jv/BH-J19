@@ -21,4 +21,8 @@ public class PersonListHandler {
 		return null;
 	}
 
+	public void getListInfo() {
+
+		personList.forEach(System.out::println);
+	}
 }

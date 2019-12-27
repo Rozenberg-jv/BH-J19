@@ -6,6 +6,8 @@ package by.belhard.j19.hw.hw7.task2sub;
  * (либо null, если человека с таким именем нет в списке). После этого вызвать у получившегося объекта метод toString().
  */
 
+import by.belhard.j19.hw.hw7.task1.pets.Dog;
+
 @SuppressWarnings("Duplicates")
 public class Main {
 
