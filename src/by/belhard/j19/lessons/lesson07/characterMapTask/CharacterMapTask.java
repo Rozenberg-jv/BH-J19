@@ -12,9 +12,11 @@ import java.util.Map;
 
 public class CharacterMapTask {
 
+    private static final String FINAL_CHARS = ".,/!?{}()[]-_\"";
+
     public static void main(String[] args) {
 
-        String input = "\"Mama myla ramu!\"";
+        String input = "\"Mama, myla ramu!\"";
 
         Map<Character, Integer> result = getCharacterCount(input);
 
@@ -30,6 +32,9 @@ public class CharacterMapTask {
         char[] chars = input.toLowerCase().toCharArray();
 
         for (char c : chars) {
+            if (FINAL_CHARS.indexOf(c) >= 0)
+                c = '*';
+
             if (!map.containsKey(c)) {
                 map.put(c, 1);
             } else {

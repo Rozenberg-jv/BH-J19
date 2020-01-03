@@ -20,9 +20,9 @@ public class Person {
 
 	@Override
 	public String toString() {
-
 		return "Person{" +
-				"name='" + name + number + '\'' +
+				"name='" + name + '\'' +
+				", number=" + number +
 				'}';
 	}
 }
