@@ -9,11 +9,13 @@ import java.util.NoSuchElementException;
 
 public class SpecialtiesService {
 
-	private static final String GET_ID_BY_SPECIALTY_QUERY = "select id from specialties where specialty = ?";
+	private static final String GET_ID_BY_SPECIALTY_QUERY =
+			"select id from specialties where specialty = ?";
 
 	public int getIdBySpecialty(String specialty) throws SQLException {
 
-		PreparedStatement preparedStatement = DBManager.getConnection().prepareStatement(GET_ID_BY_SPECIALTY_QUERY);
+		PreparedStatement preparedStatement =
+				DBManager.getConnection().prepareStatement(GET_ID_BY_SPECIALTY_QUERY);
 
 		preparedStatement.setString(1, specialty);
 

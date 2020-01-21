@@ -42,6 +42,7 @@ public class MainMenu {
 					employeesService.addNewEmployee(name, salary, specialtyId);
 					break;
 				case "2":
+					employeesService.printAllEmployeesData();
 					break;
 				case "3":
 					break;

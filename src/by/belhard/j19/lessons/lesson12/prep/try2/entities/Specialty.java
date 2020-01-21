@@ -29,9 +29,6 @@ public class Specialty {
 
     @Override
     public String toString() {
-        return "Specialty{" +
-                "id=" + id +
-                ", specialty='" + specialty + '\'' +
-                '}';
+        return String.format("spec_id=%d, title=\"%s\"", id, specialty);
     }
 }

@@ -1,12 +1,13 @@
 package by.belhard.j19.lessons.lesson12.prep.try2;
 
 import java.sql.Connection;
+import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBManager {
 
-	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+//	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String DATABASE_URL =
 			"jdbc:mysql://localhost:3306/bhj19?serverTimezone=UTC";
 
